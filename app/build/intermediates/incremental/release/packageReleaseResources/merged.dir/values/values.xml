@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="ic_launcher_background">#3EC3DB</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="add_sample_data">Add excursions</string>
+    <string name="app_name">My Travel Application</string>
+    <string name="click_to_select_date">Click to select date</string>
+    <string name="excursion_date_mm_dd_yy">Excursion Date (MM/DD/YY)</string>
+    <string name="excursion_details">Excursion Details</string>
+    <string name="excursion_title">Excursion Title</string>
+    <string name="vacation_title">Vacation Title</string>
+    <style name="Base.Theme.MyTravelApplication" parent="Theme.Material3.DayNight">
+        
+        
+    </style>
+    <style name="Theme.MyTravelApplication" parent="Base.Theme.MyTravelApplication"/>
+</resources>

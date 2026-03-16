@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Travel Application</string>
+    <string name="add_sample_data">Add excursions</string>
+    <string name="excursion_details">Excursion Details</string>
+    <string name="excursion_title">Excursion Title</string>
+    <string name="excursion_date_mm_dd_yy">Excursion Date (MM/DD/YY)</string>
+    <string name="click_to_select_date">Click to select date</string>
+    <string name="vacation_title">Vacation Title</string>
+</resources>

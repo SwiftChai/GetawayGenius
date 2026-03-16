@@ -1,0 +1,178 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.mytravelapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+11-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:5:5-77
+11-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:5:22-74
+12
+13    <permission
+13-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+14        android:name="com.example.mytravelapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+14-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+15        android:protectionLevel="signature" />
+15-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+16
+17    <uses-permission android:name="com.example.mytravelapplication.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+17-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+18
+19    <application
+19-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:6:5-40:19
+20        android:allowBackup="true"
+20-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:7:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.9.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/019fc3c8fa41e724ee453514014e60ab/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+22        android:dataExtractionRules="@xml/data_extraction_rules"
+22-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:8:9-65
+23        android:extractNativeLibs="false"
+24        android:fullBackupContent="@xml/backup_rules"
+24-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:9:9-54
+25        android:icon="@mipmap/ic_launcher"
+25-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:10:9-43
+26        android:label="@string/app_name"
+26-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:11:9-41
+27        android:roundIcon="@mipmap/ic_launcher_round"
+27-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:12:9-54
+28        android:supportsRtl="true"
+28-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:13:9-35
+29        android:theme="@style/Theme.MyTravelApplication" >
+29-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:14:9-57
+30        <activity
+30-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:15:9-19:40
+31            android:name="com.example.mytravelapplication.UI.VacationDetails"
+31-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:16:13-47
+32            android:exported="false"
+32-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:19:13-37
+33            android:label="Vacation details and excursions"
+33-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:17:13-60
+34            android:parentActivityName="com.example.mytravelapplication.UI.VacationListActivity" />
+34-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:18:13-66
+35        <activity
+35-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:20:9-24:40
+36            android:name="com.example.mytravelapplication.UI.ExcursionDetails"
+36-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:21:13-48
+37            android:exported="false"
+37-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:24:13-37
+38            android:label="Excursion Details"
+38-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:22:13-46
+39            android:parentActivityName="com.example.mytravelapplication.UI.VacationListActivity" />
+39-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:23:13-66
+40        <activity
+40-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:25:9-28:41
+41            android:name="com.example.mytravelapplication.UI.VacationListActivity"
+41-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:26:13-52
+42            android:exported="false"
+42-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:27:13-37
+43            android:label="Vacations" />
+43-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:28:13-38
+44        <activity
+44-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:29:9-38:20
+45            android:name="com.example.mytravelapplication.UI.MainActivity"
+45-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:30:13-44
+46            android:exported="true"
+46-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:31:13-36
+47            android:label="Vacation Planner" >
+47-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:32:13-45
+48            <intent-filter>
+48-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:33:13-37:29
+49                <action android:name="android.intent.action.MAIN" />
+49-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:34:17-69
+49-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:34:25-66
+50
+51                <category android:name="android.intent.category.LAUNCHER" />
+51-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:36:17-77
+51-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:36:27-74
+52            </intent-filter>
+53        </activity>
+54
+55        <receiver
+55-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:39:5-70
+56            android:name="com.example.mytravelapplication.UI.MyReceiver"
+56-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:39:15-44
+57            android:exported="true" />
+57-->/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/AndroidManifest.xml:39:45-68
+58
+59        <provider
+59-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+60            android:name="androidx.startup.InitializationProvider"
+60-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+61            android:authorities="com.example.mytravelapplication.androidx-startup"
+61-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+62            android:exported="false" >
+62-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+63            <meta-data
+63-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+64                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+64-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+65                android:value="androidx.startup" />
+65-->[androidx.emoji2:emoji2:1.2.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/b232dc5128a9daeaf96b3f763afa4c79/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+66            <meta-data
+66-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/136a8cb9c320bdb6c6a3e17d75cf3c8f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:29:13-31:52
+67                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+67-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/136a8cb9c320bdb6c6a3e17d75cf3c8f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:30:17-78
+68                android:value="androidx.startup" />
+68-->[androidx.lifecycle:lifecycle-process:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/136a8cb9c320bdb6c6a3e17d75cf3c8f/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:31:17-49
+69            <meta-data
+69-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+70-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+71                android:value="androidx.startup" />
+71-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+72        </provider>
+73
+74        <service
+74-->[androidx.room:room-runtime:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/232f3ee2310146e441e45e3e6bbd90d2/transformed/room-runtime-2.6.1/AndroidManifest.xml:24:9-28:63
+75            android:name="androidx.room.MultiInstanceInvalidationService"
+75-->[androidx.room:room-runtime:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/232f3ee2310146e441e45e3e6bbd90d2/transformed/room-runtime-2.6.1/AndroidManifest.xml:25:13-74
+76            android:directBootAware="true"
+76-->[androidx.room:room-runtime:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/232f3ee2310146e441e45e3e6bbd90d2/transformed/room-runtime-2.6.1/AndroidManifest.xml:26:13-43
+77            android:exported="false" />
+77-->[androidx.room:room-runtime:2.6.1] /Users/lindsay/.gradle/caches/9.1.0/transforms/232f3ee2310146e441e45e3e6bbd90d2/transformed/room-runtime-2.6.1/AndroidManifest.xml:27:13-37
+78
+79        <receiver
+79-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+80            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+80-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+81            android:directBootAware="false"
+81-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+82            android:enabled="true"
+82-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+83            android:exported="true"
+83-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+84            android:permission="android.permission.DUMP" >
+84-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+85            <intent-filter>
+85-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+86                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+86-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+87            </intent-filter>
+88            <intent-filter>
+88-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+89                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+89-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+90            </intent-filter>
+91            <intent-filter>
+91-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+92                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+92-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+93            </intent-filter>
+94            <intent-filter>
+94-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+95                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+95-->[androidx.profileinstaller:profileinstaller:1.3.0] /Users/lindsay/.gradle/caches/9.1.0/transforms/443b4c8f6692c53a43cc3d66d3b26696/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+96            </intent-filter>
+97        </receiver>
+98    </application>
+99
+100</manifest>
