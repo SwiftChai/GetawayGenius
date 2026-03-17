@@ -1,5 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
+    //Dependency for Google services Gradleplugin
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -46,4 +48,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    //imports Firebase BOM
+    implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
+    implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
 }
