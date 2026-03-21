@@ -1,5 +1,7 @@
 package com.example.mytravelapplication.UI;
 
+//TODO - remove hard coding, put datestamp into report
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
