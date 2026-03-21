@@ -6,4 +6,6 @@
     <string name="excursion_date_mm_dd_yy">Excursion Date (MM/DD/YY)</string>
     <string name="click_to_select_date">Click to select date</string>
     <string name="vacation_title">Vacation Title</string>
+    <string name="welcome">Welcome</string>
+    <string name="hotel">"Hotel: "</string>
 </resources>

@@ -1,27 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.mytravelapplication.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.mytravelapplication.app-mergeDebugResources-47:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "/Users/lindsay/.gradle/caches/9.1.0/transforms/e85beefc3a588830b867db737979ede5/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/lindsay/Desktop/d424-software-engineering-capstone/app/src/main/res/values-night/themes.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "326"
                     },
                     "to": {
-                        "startLines": "6,7,8,9,10,11,12,38",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "182,252,336,420,516,618,720,3575",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "247,331,415,511,613,715,809,3659"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "177"
                     }
                 },
                 {
-                    "source": "/Users/lindsay/.gradle/caches/9.1.0/transforms/9c0e5f5bd83e509ee10d9c4ecfae7df9/transformed/material-1.10.0/res/values-night-v8/values-night-v8.xml",
+                    "source": "/Users/lindsay/.gradle/caches/9.1.0/transforms/6dfd72770e153e66f22b6c5d81cddfb2/transformed/material-1.10.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,22 +40,20 @@
                     }
                 },
                 {
-                    "source": "/Users/lindsay/AndroidStudioProjects/MyTravelApplication/app/src/main/res/values-night/themes.xml",
+                    "source": "/Users/lindsay/.gradle/caches/9.1.0/transforms/39fa59f4930da2beb651f065625350a8/transformed/appcompat-1.6.1/res/values-night-v8/values-night-v8.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "326"
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "177"
+                        "startLines": "6,7,8,9,10,11,12,38",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "182,252,336,420,516,618,720,3575",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "247,331,415,511,613,715,809,3659"
                     }
                 }
             ]

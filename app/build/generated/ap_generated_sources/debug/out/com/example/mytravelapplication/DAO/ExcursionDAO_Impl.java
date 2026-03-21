@@ -259,6 +259,53 @@ public final class ExcursionDAO_Impl implements ExcursionDAO {
     }
   }
 
+  @Override
+  public List<Excursions> searchExcursions(final String query) {
+    final String _sql = "SELECT * FROM excursions WHERE excursionName LIKE '%' || ? || '%'";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfExcursionID = CursorUtil.getColumnIndexOrThrow(_cursor, "excursionID");
+      final int _cursorIndexOfExcursionName = CursorUtil.getColumnIndexOrThrow(_cursor, "excursionName");
+      final int _cursorIndexOfExcursionDate = CursorUtil.getColumnIndexOrThrow(_cursor, "excursionDate");
+      final int _cursorIndexOfVacationID = CursorUtil.getColumnIndexOrThrow(_cursor, "vacationID");
+      final List<Excursions> _result = new ArrayList<Excursions>(_cursor.getCount());
+      while (_cursor.moveToNext()) {
+        final Excursions _item;
+        final String _tmpExcursionName;
+        if (_cursor.isNull(_cursorIndexOfExcursionName)) {
+          _tmpExcursionName = null;
+        } else {
+          _tmpExcursionName = _cursor.getString(_cursorIndexOfExcursionName);
+        }
+        final String _tmpExcursionDate;
+        if (_cursor.isNull(_cursorIndexOfExcursionDate)) {
+          _tmpExcursionDate = null;
+        } else {
+          _tmpExcursionDate = _cursor.getString(_cursorIndexOfExcursionDate);
+        }
+        final int _tmpVacationID;
+        _tmpVacationID = _cursor.getInt(_cursorIndexOfVacationID);
+        _item = new Excursions(_tmpExcursionName,_tmpExcursionDate,_tmpVacationID);
+        final int _tmpExcursionID;
+        _tmpExcursionID = _cursor.getInt(_cursorIndexOfExcursionID);
+        _item.setExcursionID(_tmpExcursionID);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
   @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();

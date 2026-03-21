@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -77,6 +78,9 @@ public class VacationDetails extends AppCompatActivity {
             }, calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH),
                     calendar.get(Calendar.DAY_OF_MONTH)).show();
         });
+
+        Button reportButton = findViewById(R.id.navigateToReportButton);
+        reportButton.setOnClickListener(v -> startActivity(new Intent(this, ReportActivity.class)));
     }
 
     @Override

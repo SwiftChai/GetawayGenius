@@ -63,4 +63,12 @@ public class Repository {
     public void getExcursionById(int id, OnDataReceivedCallback<Excursions> callback) {
         databaseExecutor.execute(() -> callback.onDataReceived(mExcursionDAO.getExcursionById(id)));
     }
+    public void searchVacations(String query, OnDataReceivedCallback<List<Vacations>> callback) {
+        databaseExecutor.execute(() -> callback.onDataReceived(mVacationDAO.searchVacations(query)));
+    }
+
+    public void searchExcursions(String query, OnDataReceivedCallback<List<Excursions>> callback) {
+        databaseExecutor.execute(() -> callback.onDataReceived(mExcursionDAO.searchExcursions(query)));
+    }
+
 }

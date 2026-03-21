@@ -253,6 +253,70 @@ public final class VacationDAO_Impl implements VacationDAO {
     }
   }
 
+  @Override
+  public List<Vacations> searchVacations(final String query) {
+    final String _sql = "SELECT * FROM vacations WHERE vacationName LIKE '%' || ? || '%' OR hotel LIKE '%' || ? || '%'";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    int _argIndex = 1;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    _argIndex = 2;
+    if (query == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, query);
+    }
+    __db.assertNotSuspendingTransaction();
+    final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+    try {
+      final int _cursorIndexOfVacationID = CursorUtil.getColumnIndexOrThrow(_cursor, "vacationID");
+      final int _cursorIndexOfVacationName = CursorUtil.getColumnIndexOrThrow(_cursor, "vacationName");
+      final int _cursorIndexOfHotel = CursorUtil.getColumnIndexOrThrow(_cursor, "hotel");
+      final int _cursorIndexOfStartDate = CursorUtil.getColumnIndexOrThrow(_cursor, "startDate");
+      final int _cursorIndexOfEndDate = CursorUtil.getColumnIndexOrThrow(_cursor, "endDate");
+      final List<Vacations> _result = new ArrayList<Vacations>(_cursor.getCount());
+      while (_cursor.moveToNext()) {
+        final Vacations _item;
+        final String _tmpVacationName;
+        if (_cursor.isNull(_cursorIndexOfVacationName)) {
+          _tmpVacationName = null;
+        } else {
+          _tmpVacationName = _cursor.getString(_cursorIndexOfVacationName);
+        }
+        final String _tmpHotel;
+        if (_cursor.isNull(_cursorIndexOfHotel)) {
+          _tmpHotel = null;
+        } else {
+          _tmpHotel = _cursor.getString(_cursorIndexOfHotel);
+        }
+        final String _tmpStartDate;
+        if (_cursor.isNull(_cursorIndexOfStartDate)) {
+          _tmpStartDate = null;
+        } else {
+          _tmpStartDate = _cursor.getString(_cursorIndexOfStartDate);
+        }
+        final String _tmpEndDate;
+        if (_cursor.isNull(_cursorIndexOfEndDate)) {
+          _tmpEndDate = null;
+        } else {
+          _tmpEndDate = _cursor.getString(_cursorIndexOfEndDate);
+        }
+        _item = new Vacations(_tmpVacationName,_tmpHotel,_tmpStartDate,_tmpEndDate);
+        final int _tmpVacationID;
+        _tmpVacationID = _cursor.getInt(_cursorIndexOfVacationID);
+        _item.setVacationID(_tmpVacationID);
+        _result.add(_item);
+      }
+      return _result;
+    } finally {
+      _cursor.close();
+      _statement.release();
+    }
+  }
+
   @NonNull
   public static List<Class<?>> getRequiredConverters() {
     return Collections.emptyList();

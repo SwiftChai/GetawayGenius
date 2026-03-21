@@ -25,4 +25,10 @@
         android:title="Delete"
         app:showAsAction="never" />
 
+    <item
+            android:id="@+id/search"
+            android:title="Search"
+            android:icon="@android:drawable/ic_menu_search"
+            app:showAsAction="ifRoom" />
+
 </menu>

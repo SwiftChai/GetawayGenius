@@ -31,4 +31,7 @@ public interface ExcursionDAO {
 
     @Query("SELECT * FROM excursions WHERE vacationID = :vacationID ORDER BY excursionID ASC")
     List<Excursions> getAssociatedExcursions(int vacationID);
+
+    @Query("SELECT * FROM excursions WHERE excursionName LIKE '%' || :query || '%'")
+    List<Excursions> searchExcursions(String query);
 }

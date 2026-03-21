@@ -1,7 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
-    //Dependency for Google services Gradleplugin
+    //Dependency for Google services Gradle plugin
     id("com.google.gms.google-services")
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -33,6 +34,9 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+    kotlinOptions {
+        jvmTarget = "11"
+    }
 }
 
 dependencies {
@@ -42,6 +46,7 @@ dependencies {
     implementation(libs.constraintlayout)
 
     implementation(libs.room.runtime)
+    implementation(libs.core.ktx)
     annotationProcessor(libs.room.compiler)
     androidTestImplementation(libs.room.testing)
 
@@ -50,5 +55,6 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     //imports Firebase BOM
     implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
-    implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
+    //Firebase Auth dependency
+    implementation("com.google.firebase:firebase-auth")
 }

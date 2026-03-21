@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="12dp"
+              android:background="?attr/selectableItemBackground"
+              android:layout_marginBottom="8dp">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="8dp"/>
+
+    <!-- Vacation Name -->
+    <TextView
+            android:id="@+id/reportVacationName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Vacation Name" />
+
+    <!--  Hotel -->
+    <TextView
+            android:id="@+id/reportHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:text="Hotel: " />
+
+    <!-- Date Range -->
+    <TextView
+            android:id="@+id/reportDates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:text="Dates: " />
+
+    <!--  Excursion Count -->
+    <TextView
+            android:id="@+id/reportExcursionCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp"
+            android:text="Excursions: " />
+
+</LinearLayout>
