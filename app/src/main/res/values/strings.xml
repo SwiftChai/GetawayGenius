@@ -8,4 +8,7 @@
     <string name="vacation_title">Vacation Title</string>
     <string name="welcome">Welcome</string>
     <string name="hotel">"Hotel: "</string>
+    <string name="start">"Start: "</string>
+    <string name="end">"End: "</string>
+    <string name="dates">"Dates: "</string>
 </resources>

@@ -2,7 +2,6 @@ package com.example.mytravelapplication.UI;
 
 import android.app.DatePickerDialog;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.TextView;
@@ -91,10 +90,10 @@ public class ReportActivity extends AppCompatActivity {
                     String formatted = sdf.format(picked.getTime());
                     if (isStartDate) {
                         startDate = formatted;
-                        startDateTextView.setText("Start: " + startDate);
+                        startDateTextView.setText(getString(R.string.start) + startDate);
                     } else {
                         endDate = formatted;
-                        endDateTextView.setText("End: " + endDate);
+                        endDateTextView.setText(getString(R.string.end) + endDate);
                     }
                 },
                 calendar.get(Calendar.YEAR),

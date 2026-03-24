@@ -56,7 +56,7 @@ public class ReportAdapter extends RecyclerView.Adapter<ReportAdapter.ReportView
         ReportRow row = rows.get(position);
         holder.vacationName.setText(row.vacationName);
         holder.hotel.setText("Hotel: " + row.hotel);
-        holder.dates.setText("Dates: " + row.startDate + " – " + row.endDate);
+        holder.dates.setText(holder.itemView.getContext().getString(R.string.dates) + row.startDate + " – " + row.endDate);
         holder.excursionCount.setText("Excursions: " + row.excursionCount);
     }
 
