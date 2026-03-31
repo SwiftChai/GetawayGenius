@@ -35,3 +35,11 @@ captures/
 # Keystore files
 *.jks
 *.keystore
+
+*.jks
+*.keystore
+app/google-services.json
+app/release/
+.gradle/
+.DS_Store
+**/.DS_Store
